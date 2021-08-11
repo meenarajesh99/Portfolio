@@ -3,64 +3,103 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Go google "normalize css to see what this does!"-->
     <link rel="stylesheet" type="text/css"
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!--Link to our stylesheet-->
     <link rel="stylesheet" type="text/css" href="./styles.css" />
-    <title>My test page</title>
+    <title>meenapai.com</title>
   </head>
 
-  <body class="page">
-    <!--- PAGE HEADER WITH NAV BAR AND LOGO --->
-    <header class="page__header">
-      <nav class="nav">
-        <ol class="nav__list">
-          <li class="nav__list-item">About</li>
-          <li class="nav__list-item">Experience</li>
-        </ol>
-      </nav>
-    </header>
-
-    <!--The rest of the page-->
-    <div class="page__content">
-
-      <!---Left column (will be small sidebar)--->
-      <div class="left-content">
-        This will become the left column. You will put links to your Github, LinkedIn, etc here.
+  <body> 
+    <div class= "nav">
+      <div class="menu">
+        
       </div>
+    <!--- PAGE HEADER WITH NAV BAR AND LOGO --->
+    
+    <div>
+      <ul class="navigation">
+          <li><a href="#aboutme">About me</a></li>
+          <li><a href="#experience">Experience</a></li>
+          
+        </ul>
+      </div>
+      </div>
+   
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <article>
+          <h4>Hi, my name is </h4>
+          <h2>Meena Pai.</h2>
+          <h4>Full stack Software Engineer based in New Jersey.</h4>
+          
+        </article>
+          <br><br>
+          
+          <a class="button" href="mailto:meenarajesh99@icloud.com" target="_blank">Get in Touch</a>
+        
+      </div>
+      </section>
 
-      <!---Center column (will be page hero and content sections) --->
-      <main class="main-content">
-        <section id="hero" class="main-content__section">
-          <div>
-            <div>
-              <h1 class="big-heading">My Name Here</h1>
-              <h2>And what I do.</h2>
+      <div class="flex-container">
+        
+        <!---Left column (will be small sidebar)--->
+        <div class="left-content">
+            <div class = "social-icon" >
+            <a href="https://github.com/meenarajesh99" target="_blank" class="fa fa-github"></a>
+            <a href="https://www.linkedin.com/in/meena-r-pai-77787ab9/"  target="_blank" class="fa fa-linkedin"></a>
             </div>
-            <p>Here is where I will briefly describe myself.</p>
-            <div>
-              <a>Get in Touch</a>
+          
+          </div>
+      
+       <!---Center column (content sections) --->
+        
+        <div class= "main-content__section">
+          <section id="profile">
+            <div class = "person-img">
+            <img src= "../img/Profile.jpg";
             </div>
-        </section>
-        <section id="about" class="main-content__section">
-          <h2 class="section-heading">
-            About Me
-          </h2>
-          <p>Here is where I talk more about myself.</p>
-        </section>
-        <section id="experience" class="main-content__section">
-          <h2 class="section-heading">
-            Experience
-          </h2>
-          <p>Here is where I talk about my experience.</p>
-        </section>
-      </main>
+            <br><br><br>
+          </section>
 
-      <!---Right column (will be empty space)--->
-      <div class="right-content">
-        This will become the right column. Leave this blank, or add something similar to the example website.
+          <section id="aboutme">
+              <div class="aboutme" >
+              <h3>About Me</h3>
+              <p>Hello! My name is Meena. I am excited to learn new technologies and to design and create immersive web pages.  My interest in programming started 
+              when I watched my son coding in Java when he was in high school. Since then, I have learned to enjoy working with HTML/CSS and Flexbox, which I found to be extremely useful while working on a project to develop a laboratory management system.</p>
+              </div>
+           <br><br>   
+          </section>
+
+          <section id="experience" >
+            <div class="experience">
+            <h3>Experience</h3>
+            <p>I am a beginner in programming with less than six months experience. For a 
+            case study project I worked on as part of my training, I created a Laboratory Management System, complete with Spring security and 10 functional webpages.</p>
+           
+             </div>
+             </section>
+        </div>
+
+        <!---Right column (will be empty space)--->
+       <div class="right-content">
+        <div class="info"><a href="#" style="text-decoration: none">meenarajesh99@icloud.com </a></div>
+        
       </div>
     </div>
+   
+    <div class= "footer">
+      <p><span>&#169;2021</span>
+        <P>Designed & Built by Meena Pai</P>
+    </div>
   </body>
+  <script src="js/nav.js" type="text/javascript"></script>
 </html>
+
+
+
+
